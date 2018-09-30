@@ -28,7 +28,7 @@
 	</div>
     <div class="layui-val-icon larry-login">
     	<div class="layui-code-box">
-    		<input type="text" id="code" value="<?=$this->session->securityCode?>" name="code" placeholder="验证码" maxlength="4" class="login_txtbx">
+    		<input type="text" id="code" value="" name="code" placeholder="验证码" maxlength="4" class="login_txtbx">
             <?=$securityCode?>
     	</div>
     </div>

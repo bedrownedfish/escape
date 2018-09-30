@@ -18,13 +18,13 @@
 	<form class="layui-form">
 		
 		<div class="layui-form-item">
-			<label class="layui-form-label">文章内容</label>
+			<label class="layui-form-label">关于我们</label>
 			<div class="layui-input-block">
 				<textarea class="layui-textarea layui-hide" name="content" lay-verify="content" id="news_content"><?=$code['content']?></textarea>
 			</div>
 		</div>
 		<div class="layui-form-item">
-			<label class="layui-form-label">文章内容</label>
+			<label class="layui-form-label">联系我们</label>
 			<div class="layui-input-block">
 				<textarea class="layui-textarea layui-hide" name="content" lay-verify="content" id="news_content1"><?=$code['contents']?></textarea>
 			</div>
