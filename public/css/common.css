@@ -1,0 +1,408 @@
+/*公共类---------------------------*/
+*{
+	margin: 0;
+	padding: 0;
+}
+::-webkit-scrollbar{
+  display:none;
+}
+a{
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	-webkit-user-select: none;
+	-moz-user-focus: none;
+	-moz-user-select: none;
+}
+a,a:hover,a:active,a:visited,a:link,a:focus{
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+    outline:none;
+    background: none;
+    text-decoration: none;
+}
+::selection { 
+    background: #FFF; 
+    color: #333; 
+} 
+::-moz-selection { 
+    background: #FFF; 
+    color: #333; 
+} 
+::-webkit-selection { 
+    background: #FFF; 
+    color: #333; 
+} 
+li{
+	list-style: none;
+}
+input{
+	padding: 0;
+	margin: 0;
+	outline: none;
+}
+p{
+	margin: 0;
+}
+body{
+	background: #fff;
+	font-family: SimSun !important;
+}
+.clearfix:after{
+	display: block;
+	clear: both;
+	content: "";
+	visibility: hidden;
+	height: 0px;
+
+}
+.clearfix{
+	zoom:1;
+}
+.section_x{
+	position: fixed;
+	width: 100%;
+	text-align: center;
+	top: 0px;
+	height: 44px;
+	line-height: 44px;
+	z-index: 9;
+	background: #1A1A1A;
+	/*border-bottom: 1px solid #eee;*/
+}
+.section_x .p1{
+	color: #fff;
+	font-weight: 500;
+	font-size: 17px;
+	height: 44px;
+}
+.section_x .a1{
+	position: absolute;
+	left: 10px;
+	top: 5px;
+}
+.section_x .a1 img{
+	width: 1.5rem;
+}
+.section_y{
+	position: fixed;
+	width: 100%;
+	text-align: center;
+	top: 0px;
+	height: 44px;
+	line-height: 44px;
+	z-index: 9;
+	background: #1A1A1A;
+}
+.section_y .p1{
+	text-align: left;
+	padding: 0px 10px;
+}
+.section_y .p1 img{
+	width: 6rem;
+	padding-top: 10px;
+}
+
+
+.container{
+	padding: 0px 15px;
+}
+.container1{
+	padding: 0px 10px;
+}
+.kong1{
+	height: 44px;
+	width: 100%;
+}
+.kong{
+	height: 55px;
+}
+html{
+	height: 100%;
+}
+
+.ge{
+	height: 6px;
+	width: 100%;
+	background: #eee;
+}
+.footer{
+
+}
+.footer .a1{
+	padding: 20px 0px;
+	background: #282828;
+}
+.footer .a1 ul li{
+	float: left;
+	width: 50%;
+	text-align: center;
+	height: 4rem;
+	line-height: 4rem;
+}
+.footer .a1 ul li img{
+	width: 4rem;
+}
+.footer .a1 ul li span{
+	font-size: 0.9rem;
+	color: #fff;
+	font-weight: bold;
+	position: relative;
+	top: -27px;
+}
+
+.footer .a2{
+	padding: 20px 0px;
+	background: #1A1A1A;
+	text-align: center;
+}
+.footer .a2 .p1{
+	text-align: center;
+	font-size: 0.9rem;
+	color: #fff;
+	font-weight: bold;
+}
+.footer .a2 .p2{
+	text-align: center;
+	height: 1rem;
+	line-height: 1rem;
+	margin-bottom: 5px;
+}
+.footer .a2 .p2 span{
+	display: inline-block;
+	height: 2px;
+	width: 8%;
+	background:  #08D6FF;
+}
+.footer .a2 .p3{
+	color: #fff;
+	font-size: 0.9rem;
+	margin-bottom: 5px;
+}
+
+.footer .a2 .p4{
+	color: #fff;
+	font-size: 0.9rem;
+}
+
+/*首页*/
+.ppp{
+	height: 220px;
+}
+.ppp img{
+	width: 100%;
+	height: 220px;
+}
+.c1_section2{
+	padding: 20px 0px;
+	background: url(../images/our_service_bg.png);
+	background-size: 100% 100%;
+}
+.c1_section2 .a1_1{
+	width: 80%;
+	margin: 0 auto;
+}
+.c1_section2 .a1_1 .a1 .p1{
+	text-align: center;
+	color: #08D6FF;
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+/*.c1_section2 .a1_1 .a1 .p1 span{
+	display: inline-block;
+	padding-bottom: 5px;
+	border-bottom: 2px solid #08D6FF;
+}*/
+.c1_section2 .a1_1 .a1 .p2{
+	text-align: center;
+	height: 1rem;
+	line-height: 1rem;
+
+}
+.c1_section2 .a1_1 .a1 .p2 span{
+	display: inline-block;
+	height: 2px;
+	width: 8%;
+	background:  #08D6FF;
+}
+.c1_section2 .a1_1 .a2{
+	margin-top: 40px;
+}
+.c1_section2 .a1_1 .a2 li{
+	float: left;
+	text-align: center;
+	width: 50%;
+	margin-bottom:20px;
+}
+.c1_section2 .a1_1 .a2 li img{
+	width: 4.5rem;
+	height: 4.5rem;
+}
+.c1_section2 .a1_1 .a2 li .p1{
+	margin-top: 8px;
+	color: #fff;
+	font-size: 0.9rem;
+}
+.c1_section2 .a1_1 .a2 li .p1.select{
+	color: #08D6FF;
+}
+.c1_section3{
+	padding: 10px 0px;
+}
+.c1_section3 .a1 .p1{
+	text-align: center;
+	color: #000;
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+.c1_section3 .a1 .p2{
+	text-align: center;
+	height: 1rem;
+	line-height: 1rem;
+}
+.c1_section3 .a1 .p2 span{
+	display: inline-block;
+	height: 2px;
+	width: 8%;
+	background:  #08D6FF;
+}
+.c1_section3 .a2{
+	margin-top: 30px;
+}
+.c1_section3 .a2 li{
+	float: left;
+	width: 50%;
+	margin-bottom: 20px;
+}
+.c1_section3 .a2 li>div{
+	width: 90%;
+	margin: 0 auto;
+	border-radius: 3px;
+	box-shadow: 0px 0px 5px #bbb;
+	overflow: hidden;
+	position: relative;
+}
+.c1_section3 .a2 li div img{
+	width: 100%;
+}
+.c1_section3 .a2 li div .ao{
+	position: absolute;
+	bottom: 0px;
+	height: 30px;
+	line-height: 30px;
+	width: 100%;
+	
+}
+.c1_section3 .a2 li:first-child div .ao{
+	background: rgba(19,207,245,0.9);
+}
+.c1_section3 .a2 li:nth-child(2) div .ao{
+	background: rgba(228,167,120,0.9);
+}
+.c1_section3 .a2 li:nth-child(3) div .ao{
+	background: rgba(23,58,38,0.9);
+}
+.c1_section3 .a2 li:nth-child(4) div .ao{
+	background: rgba(17,43,66,0.9);
+}
+.c1_section3 .a2 li div .ao .p1{
+	text-align: center;
+	color: #fff;
+	font-size: 0.9rem;
+	font-weight: bold;
+}
+
+
+/*第二页*/
+.c2_section1{
+	padding: 10px 0px;
+}
+.c2_section1 .a1{
+	float: left;
+	width: 60%;
+}
+.c2_section1 .a1 .sh{
+	width: 90%;
+	margin: 0 auto;
+}
+.c2_section1 .a1 .a1_1{
+	margin-bottom: 15px;
+}
+.c2_section1 .a1 .a1_1 .p1{
+	width: 70%;
+	float: left;
+	height: 2rem;
+	line-height: 2rem;
+	background: #E3E9E9;
+	font-size: 0.9rem;
+	color: #000;
+	text-align: center;
+}
+.c2_section1 .a1 .a1_1 .s1{
+	float: right;
+	height: 2rem;
+	line-height: 2rem;
+	width: 25%;
+	text-align: center;
+	background: #00A1E9;
+	color: #fff;
+	font-size: 0.9rem;
+}
+.c2_section1 .a1 .a1_1.a1_1s .p1{
+	float: right;
+}
+.c2_section1 .a1 .a1_1.a1_1s .p1 progress{
+	width: 100%;
+}
+.c2_section1 .a1 .a1_1.a1_1s .s1{
+	float: left;
+}
+
+
+
+
+
+
+
+
+
+
+.c2_section1 .a2{
+	float: right;
+	width: 40%;
+}
+.c2_section1 .a2>div{
+	margin-bottom: 15px;
+}
+.c2_section1 .a2 .a2_1{
+	height: 2rem;
+	line-height: 2rem;
+	background: #E3E9E9;
+}
+.c2_section1 .a2 .a2_1 progress{
+	width: 100%;
+	color: #000;
+}
+.c2_section1 .a2 .a2_2{
+	height: 2rem;
+	line-height: 2rem;
+	text-align: center;
+}
+.c2_section1 .a2 .a2_2 img{
+	display: none;
+	width: 2rem;
+	height: 2rem;
+}
+.c2_section2{
+	padding: 15px 0px;
+	text-align: left;
+	margin-bottom: 100px;
+}
+.c2_section2 .p1{
+	color: #676767;
+	font-size: 0.8rem;
+	margin-bottom: 10px;
+}
+.c2_section2 .p2{
+	color: #676767;
+	font-size: 0.8rem;
+	margin-bottom: 5px;
+}
