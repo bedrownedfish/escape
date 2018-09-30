@@ -20,8 +20,10 @@
 		<div class="ppp">
 			<div class="swiper-container" id="mm">
 			    <div class="swiper-wrapper">
-			        <div class="swiper-slide"><a href="javascript:;"><img src="<?=base_url('public/')?>images/image_banner_01.png"/></a></div>
-			        <div class="swiper-slide"><a href="javascript:;"><img src="<?=base_url('public/')?>images/image_banner_02.png"/></a></div>
+			    	<?php foreach($show as $vs):if($vs['imgs']!=""):?>
+			    		<div class="swiper-slide"><a href="javascript:;"><img src="<?=base_url($vs['imgs'])?>" /></a></div>
+
+			    	<?php endif;endforeach?>
 			    </div>
 			    <div class="swiper-pagination"></div>
 			</div>

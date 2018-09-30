@@ -17,6 +17,8 @@ class Escape extends CI_Controller {
 	{
 		$data = $this->Dbmodel->select()->get('config',1);
 
+		$data['show'] = $this->Dbmodel->select()->get('slideshow');
+
 		$this->load->view('index',$data);
 
 	}
